@@ -1,3 +1,7 @@
 h1 {
   text-align: center;
 }
+
+#selfie {
+  border-radius: 5%;
+}
