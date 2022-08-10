@@ -18,3 +18,31 @@ h1 {
 #summit-logo {
   border-radius: 10%;
 }
+
+#entire-screen {
+  background-repeat: no-repeat;
+}
+
+.footer-border-top {
+  border-top: 2px solid lightgray;
+  margin-top: 20px;
+}
+
+.row {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+}
+
+.slightly-transparent {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+#no-margin-x {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#contact-form {
+  background: rgba(255, 255, 255, 0.95);
+}

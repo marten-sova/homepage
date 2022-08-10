@@ -40,7 +40,7 @@
       </nav>
       <div id="entire-screen">
       <div class="container bootstrap-grid">
-        <div class="row">
+        <div class="row slightly-transparent">
           <div class="col-md-4">
             <img src="img/self.jpg" alt="selfie of Marten in front of a Marten branded semi-truck." class="img-fluid" id="selfie">
           </div>
@@ -53,16 +53,11 @@
               I specialize in C, C++, Python, and full stack web development.
             </p>
             <p>
-              I love <a href="#" onclick="addBackgroundImage()">photography</a> and video production, and have done a lot of freelance work. I've managed a technical Minecraft server since 2017. My cat's name is Kittles.
+              I love <a href="#" onclick="addImage()">photography</a> and video production, and have done a lot of freelance work. I've managed a technical Minecraft server since 2017. My cat's name is Kittles.
             </p>
-            <script>
-              function addBackgroundImage() {
-                document.getElementById("entire-screen").style.backgroundImage = "url('img/alvord-desert.jpg')";
-              }
-            </script>
           </div>
         </div>
-        <div class="row">
+        <div class="row slightly-transparent">
           <h2 id="work" class="bg-light">Work Experience</h2>
           <div class="col-md-2 col-lg-1 d-none d-md-block">
             <img src="img/summit-logo.jpg" alt="Summit Projects logo" class="img-fluid" id="summit-logo">
@@ -80,7 +75,7 @@
             </p>
           </div>
         </div>
-        <div class="row">
+        <div class="row slightly-transparent">
           <div class="col-md-2 col-lg-1 d-none d-md-block">
             <img src="img/hoodtech-logo.jpg" alt="Hood Tech logo" class="img-fluid">
           </div>
@@ -94,7 +89,7 @@
             </p>
           </div>
         </div>
-        <div class="row">
+        <div class="row slightly-transparent">
           <div class="col-md-2 col-lg-1 d-none d-md-block">
             <img src="img/qstream-logo.svg" alt="Qstream logo" class="img-fluid">
           </div>
@@ -197,10 +192,10 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row" id="no-margin-x">
           <div class="col-md-6 col-lg-5">
             <h2 id="contact" class="bg-light">Contact</h2>
-            <form>
+            <form id="contact-form">
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" placeholder="name@example.com">
@@ -216,7 +211,7 @@
       </div>
       </div>
     </main>
-    <footer class="bg-light">
+    <footer class="bg-light footer-border-top">
       <div id="footer-copyright">
         &copy;
         <script>
@@ -229,4 +224,13 @@
       </div>
     </footer>
   </body>
+  <script>
+    function addImage() {
+      if(window.innerWidth >= 768){
+        document.getElementById("entire-screen").style.backgroundImage = "url('img/alvord-desert.jpg')";
+      }
+      else{
+      }
+    };
+  </script>
 </html>
