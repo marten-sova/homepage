@@ -34,8 +34,16 @@ h1 {
   background-color: white;
 }
 
-.slightly-transparent {
+.opacity90 {
+  background: rgba(255, 255, 255, 0.90);
+}
+
+.opacity95 {
   background: rgba(255, 255, 255, 0.95);
+}
+
+#about {
+  background: rgba(255, 255, 255, 0.4)!important;
 }
 
 #no-margin-x {
