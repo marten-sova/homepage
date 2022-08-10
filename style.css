@@ -5,3 +5,16 @@ h1 {
 #selfie {
   border-radius: 5%;
 }
+
+.row {
+  padding-top: 50px;
+}
+
+#footer-copyright {
+  text-align: center;
+  padding: 20px;
+}
+
+#summit-logo {
+  border-radius: 10%;
+}

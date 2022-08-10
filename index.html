@@ -23,16 +23,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Work</a>
+                <a class="nav-link" href="#work">Work</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#projects">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -41,16 +41,68 @@
       <div class="container bootstrap-grid">
         <div class="row">
           <div class="col-md-4">
-            <img src="self.jpg" alt="selfie of Marten in front of a Marten branded semi-truck." class="img-fluid" id="selfie">
+            <img src="img/self.jpg" alt="selfie of Marten in front of a Marten branded semi-truck." class="img-fluid" id="selfie">
           </div>
-          <div class="col-md-5">
-            <h2>About</h2>
+          <div class="col-md-8">
+            <h2 id="about" class="bg-light">About</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum suscipit nihil laborum officia, voluptatem quaerat ducimus id nam iste reiciendis ipsa amet maxime alias est eius ad voluptate praesentium qui!
+              Hi! I'm currently finishing my bachelor's in Computer Science at Portland State University, with expected graduation in spring 2023. My previous work experience includes a web design/development agency, an engineering company that makes launch/retrieval systems and vision modules for military surveillance drones, and a SaaS company, working on their enterprise microlearning app.
+            </p>
+            <p>I specialize in C, C++, Python, and full stack web development.</p>
+            <p>I love photography and video production, and have done a lot of freelance work. I've managed a technical Minecraft server since 2017. My cat's name is Kittles.</p>
             </p>
           </div>
+        </div>
+        <div class="row">
+          <h2 id="work" class="bg-light">Work Experience</h2>
+          <div class="col-md-2 col-lg-1 d-none d-md-block">
+            <img src="img/summit-logo.jpg" alt="Summit Projects logo" class="img-fluid" id="summit-logo">
+          </div>
+          <div class="col-md-2 col-lg-3">
+            <h3>Summit Projects</h3>
+            <span>Intern</span>
+          </div>
+          <div class="col-md-8">
+            <p>
+              Tasks involved graphic design, UI/UX analysis, web design/development, and database management.<br/>
+              <em>
+                Photoshop, InDesign, Wordpress, ExpressionEngine, HTML, CSS, PHP, Javascript
+              </em>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 col-lg-1 d-none d-md-block">
+            <img src="img/hoodtech-logo.jpg" alt="Hood Tech logo" class="img-fluid">
+          </div>
+          <div class="col-md-2 col-lg-3">
+            <h3>Hood Tech</h3>
+            <span>Engineering Intern</span>
+          </div>
+          <div class="col-md-8">
+            <p>
+              Authored test reports, manuals, and proposals; conducted experiments; produced demo video of our new drone-catching system; created a custom battery management system for a multicopter; programmed an Arduino to interface with the multicopter; designed parts in SolidWorks.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 col-lg-1 d-none d-md-block">
+            <img src="img/qstream-logo.svg" alt="Qstream logo" class="img-fluid">
+          </div>
+          <div class="col-md-2 col-lg-3">
+            <h3>Qstream</h3>
+            <span>Engineering Intern</span>
+          </div>
+          <div class="col-md-8">
+            <p>
+              Worked on their enterprise microlearning app, both programming and QA testing. Gained experience with version control and bug tracking.<br/>
+              <em>Ruby on Rails, MongoDB, Jira</em>
+            </p>
+          </div>
+        </div>
+        <div class="row">
           <div class="col-md-3">
-            <h2>Education</h2>
+            <h2 class="bg-light">School</h2>
             <p>
               <strong>Portland State University</strong>
               <br />
@@ -59,51 +111,112 @@
               <span>Graduating Spring 2023</span>
             </p>
           </div>
+          <div class="col-md-9">
+            <h2 id="projects" class="bg-light">Projects</h2>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Teach Safely
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>
+                      Teach Safely is a standardized training program for power tools and machinery.
+                    </p>
+                    <p>
+                      This is my ongoing capstone project. I am working with six teammates, my focus being the backend.
+                    </p>
+                    <p>
+                      <strong>
+                        AWS (Lambda, S3, DynamoDB, CloudFront, Cognito), Vue.js
+                      </strong>
+                    </p>
+                    <p>
+                      <a href="https://teachsafely.com/">Teach Safely Website</a>
+                      GitHub coming soon – currently migrating to open source.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Zombie Mode Decision Maker
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <div class="container bootstrap-grid">
+                      <div class="row">
+                        <div class="col-lg-5 col-md-12">
+                          <p>
+                            Have you ever felt so tired after a long day that you don't have the energy to do anything but stare at the wall?
+                          </p>
+                          <p>
+                            This is a VUI (voice user interface) application that helps you figure out a good use of your free time when you're in zombie mode.
+                          </p>
+                          <p>
+                            Here are some sample phrases if you'd like to try it out:
+                          </p>
+                          <code>I'm tired after a long day and I don't know what to do.</code><br/>
+                          <code>It sure is nice out...</code><br/>
+                          <code>I should probably get back into my hobbies, huh?</code><br/>
+                          <strong>Dialogflow, JavaScript</strong>
+                        </div>
+                        <div class="col-lg-7 col-md-12">
+                          <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/32af40a5-0055-45af-b079-dd569959c7fd"></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    IRC client/server chat system
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>Developed an IRC app with two teammates. Implemented multi-threaded socket management.<br/><strong>Python</strong></p>
+                    <a href="https://github.com/rk-pdx/Internet-Protocols-Final_Project">Github</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <h2>Work Experience</h2>
         <div class="row">
-          <div class="col-md-1">
-            S
-          </div>
-          <div class="col-md-3">
-            <h3>Summit Projects</h3>
-            <span>Intern</span>
-          </div>
-          <div class="col-md-8">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam amet, atque iure iusto aperiam itaque nam quam sint obcaecati adipisci ex veniam, dolorum odit repudiandae nobis minima facilis natus quibusdam!
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-1">
-            //\
-          </div>
-          <div class="col-md-3">
-            <h3>Hood Tech</h3>
-            <span>Engineering Intern</span>
-          </div>
-          <div class="col-md-8">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam amet, atque iure iusto aperiam itaque nam quam sint obcaecati adipisci ex veniam, dolorum odit repudiandae nobis minima facilis natus quibusdam!
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-1">
-            Q
-          </div>
-          <div class="col-md-3">
-            <h3>Qstream</h3>
-            <span>Engineering Intern</span>
-          </div>
-          <div class="col-md-8">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam amet, atque iure iusto aperiam itaque nam quam sint obcaecati adipisci ex veniam, dolorum odit repudiandae nobis minima facilis natus quibusdam!
-            </p>
+          <div class="col-md-6 col-lg-5">
+            <h2 id="contact" class="bg-light">Contact</h2>
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
           </div>
         </div>
       </div>
     </main>
+    <footer class="bg-light">
+      <div id="footer-copyright">
+        &copy;
+        <script>
+          document.write(new Date().getFullYear())
+        </script>
+        Marten Sova, All Rights Reserved
+        <br/>
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </footer>
   </body>
 </html>
