@@ -38,6 +38,7 @@
           </div>
         </div>
       </nav>
+      <div id="entire-screen">
       <div class="container bootstrap-grid">
         <div class="row">
           <div class="col-md-4">
@@ -48,9 +49,17 @@
             <p>
               Hi! I'm currently finishing my bachelor's in Computer Science at Portland State University, with expected graduation in spring 2023. My previous work experience includes a web design/development agency, an engineering company that makes launch/retrieval systems and vision modules for military surveillance drones, and a SaaS company, working on their enterprise microlearning app.
             </p>
-            <p>I specialize in C, C++, Python, and full stack web development.</p>
-            <p>I love photography and video production, and have done a lot of freelance work. I've managed a technical Minecraft server since 2017. My cat's name is Kittles.</p>
+            <p>
+              I specialize in C, C++, Python, and full stack web development.
             </p>
+            <p>
+              I love <a href="#" onclick="addBackgroundImage()">photography</a> and video production, and have done a lot of freelance work. I've managed a technical Minecraft server since 2017. My cat's name is Kittles.
+            </p>
+            <script>
+              function addBackgroundImage() {
+                document.getElementById("entire-screen").style.backgroundImage = "url('img/alvord-desert.jpg')";
+              }
+            </script>
           </div>
         </div>
         <div class="row">
@@ -129,9 +138,9 @@
                       This is my ongoing capstone project. I am working with six teammates, my focus being the backend.
                     </p>
                     <p>
-                      <strong>
+                      <em>
                         AWS (Lambda, S3, DynamoDB, CloudFront, Cognito), Vue.js
-                      </strong>
+                      </em>
                     </p>
                     <p>
                       <a href="https://teachsafely.com/">Teach Safely Website</a>
@@ -155,7 +164,7 @@
                             Have you ever felt so tired after a long day that you don't have the energy to do anything but stare at the wall?
                           </p>
                           <p>
-                            This is a VUI (voice user interface) application that helps you figure out a good use of your free time when you're in zombie mode.
+                            This is a voice user interface app that helps you figure out a good use of your free time when you're in zombie mode. (The embedded demo is text-chat only, but it's still fun to play around with.)
                           </p>
                           <p>
                             Here are some sample phrases if you'd like to try it out:
@@ -163,7 +172,7 @@
                           <code>I'm tired after a long day and I don't know what to do.</code><br/>
                           <code>It sure is nice out...</code><br/>
                           <code>I should probably get back into my hobbies, huh?</code><br/>
-                          <strong>Dialogflow, JavaScript</strong>
+                          <em>Dialogflow, JavaScript</em>
                         </div>
                         <div class="col-lg-7 col-md-12">
                           <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/32af40a5-0055-45af-b079-dd569959c7fd"></iframe>
@@ -180,7 +189,7 @@
                 </h2>
                 <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
-                    <p>Developed an IRC app with two teammates. Implemented multi-threaded socket management.<br/><strong>Python</strong></p>
+                    <p>Developed an IRC app with two teammates. Implemented multi-threaded socket management.<br/><em>Python</em></p>
                     <a href="https://github.com/rk-pdx/Internet-Protocols-Final_Project">Github</a>
                   </div>
                 </div>
@@ -205,6 +214,7 @@
           </div>
         </div>
       </div>
+      </div>
     </main>
     <footer class="bg-light">
       <div id="footer-copyright">
@@ -214,8 +224,8 @@
         </script>
         Marten Sova, All Rights Reserved
         <br/>
-        <a href="#">GitHub</a>
-        <a href="#">LinkedIn</a>
+        <a href="https://github.com/marten-sova">GitHub</a>
+        <a href="https://www.linkedin.com/in/martensova/">LinkedIn</a>
       </div>
     </footer>
   </body>
